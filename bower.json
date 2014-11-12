@@ -1,0 +1,17 @@
+{
+  "name": "susy_offcanvas_megamenu",
+  "version": "0.0.0",
+  "homepage": "https://github.com/mig-25/susy_offcanvas_megamenu",
+  "authors": [
+    "Sohail Hasware"
+  ],
+  "description": "Create responsive mega menu with off-canvas layout on mobile device",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
