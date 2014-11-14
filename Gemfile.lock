@@ -17,11 +17,17 @@ GEM
       sass (>= 3.3.0, < 3.5)
     compass-import-once (1.0.5)
       sass (>= 3.2, < 3.5)
+    ffi (1.9.6)
     ffi (1.9.6-x86-mingw32)
+    hologram (1.2.0)
+      redcarpet (>= 2.2, < 4.0)
+      rouge (>= 1.5)
     multi_json (1.10.1)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
+    redcarpet (3.2.0)
+    rouge (1.7.2)
     sass (3.4.7)
     sass-globbing (1.1.1)
       sass (>= 3.1)
@@ -31,11 +37,13 @@ GEM
       sass (>= 3.3.0, < 3.5)
 
 PLATFORMS
+  ruby
   x86-mingw32
 
 DEPENDENCIES
   breakpoint
   compass
+  hologram
   sass
   sass-globbing
   susy
