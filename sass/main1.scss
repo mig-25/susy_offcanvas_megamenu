@@ -1,12 +1,6 @@
-// bower:scss
-@import "susy/sass/_susy.scss";
-@import "sassy-maps/sass/_sassy-maps.scss";
-@import "breakpoint-sass/stylesheets/_breakpoint.scss";
-@import "normalize.scss/_normalize.scss";
-// endbower
-
 @import "compass";
 @import "susy";
+@import "breakpoint";
 
 
 $susy: (columns: 8, global-box-sizing: border-box, gutters: 1/4, gutter-position: inside, debug: (image: show-columns, output: overlay, toggle: bottom left));
