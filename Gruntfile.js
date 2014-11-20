@@ -22,11 +22,11 @@ module.exports = function (grunt) {
           livereload: 1337
         },
         files: [
-          'build/css/style.css',
+          'build/css/*.css',
           'build/*.html',
           'build/styleguide/*.html',
           'js/*.js',
-          'images/{,**/}*.{png,jpg,jpeg,gif,webp,svg}'
+          'build/images/{,**/}*.{png,jpg,jpeg,gif,webp,svg}'
         ]
       }
     },
@@ -65,6 +65,7 @@ module.exports = function (grunt) {
       options: {
         sassDir: 'sass',
         cssDir: 'build/css',
+        imagesDir: 'build/images', 
         bundleExec: true,
         require: ['sass-globbing', 'susy', 'breakpoint'],
       },
