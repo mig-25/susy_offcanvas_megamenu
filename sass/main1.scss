@@ -62,14 +62,15 @@ aside ul {
 main{
 	@include susy-breakpoint($mobile, 8){
 		@include span(6);
-		margin-bottom: 10%;
+		margin-bottom: 5%;
 		}
     @include susy-breakpoint($tablet, 12) {
         @include span(8);
-		margin-bottom: 15%;
+		margin-bottom: 10%;
     }
 	@include susy-breakpoint($desktop, 24){
 		 @include span(21);
+        margin-bottom: 8%;
         .col1, .col2, .col3{
             @include span(4 of 12);
 			}
