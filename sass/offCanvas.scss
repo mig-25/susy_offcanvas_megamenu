@@ -1,0 +1,37 @@
+@import "compass";
+@import "susy";
+@import "breakpoint";
+
+
+$susy: (columns: 12, global-box-sizing: border-box, gutters: 1/4, gutter-position: inside, debug: (image: show-columns, output: overlay, toggle: bottom left));
+
+@include border-box-sizing;
+
+$mobile:320px;
+$tablet:720px;
+$desktop:1200px;
+$off-canvas-width: 300px;
+
+  .container {
+    overflow: hidden;
+  }
+
+
+  .transformer {
+    
+    transition: transform 0.3s ease;
+    &.is-open {
+      transform: translate3d($off-canvas-width, 0, 0);
+    }
+  }
+    .off-canvas {
+    position: absolute;
+    width: $off-canvas-width;
+    left: -$off-canvas-width;
+    top: 0;
+    bottom: 0;
+  }
+  .main {
+    @include container();  
+    padding: 0 gutter();
+  }

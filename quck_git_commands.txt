@@ -1,0 +1,9 @@
+# make some changes
+$ git commit -a -m "Changed something"
+# make some more changes
+$ git commit -a -m "Changed something else"
+wash, rinse, repeat, until you've finished feature X, or you're at a stopping point, or you just want other people to see what you've done. Then you do
+
+$ git push
+
+git add -A && git commit
