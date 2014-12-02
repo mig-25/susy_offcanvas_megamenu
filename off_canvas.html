@@ -4,17 +4,17 @@
 <meta charset="utf-8">
 <title>Namnlöst dokument</title>
 <link rel="stylesheet" href="css/main1.css">
-    <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
+<link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
+<link href="css/mega_menu.css" rel="stylesheet" type="text/css" />
+<link href="css/form.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body class="home">
 <div class="page">
-<a href="#" class="open-panel"><i class="icon-reorder icon-2x"></i></a>
+<!--<a href="#" class="open-panel"><i class="icon-reorder icon-2x"></i></a>-->
 <header>
-  <hgroup><h1>Glada Hundar</h1>
-  <h2>För en roligare träning</h2>
-  </hgroup>
-  <nav>
+  
+  <!--<nav>
   <a href="#" class="close-panel"><i class="icon-remove-sign icon-large"></i></a>
   <ul class="menu">
   <li><a href="#">Blogg</a></li>
@@ -25,11 +25,183 @@
   <li><a href="#">Kontakt</a></li>
   <li><a href="#">FAQ</a></li>
   </ul>
-  </nav>
+  </nav>-->
+ <label for="show-menu" class="show-menu">&#9776; Menu</label>
+	<input type="checkbox" id="show-menu" role="button">
+    
+<ul class="nav">
+
+		<li>
+			<a href="#">Blogg</a>
+			
+		</li>
+		<li><a href="#">Om mig</a>
+        <div>
+				<div class="nav-column">
+					<h3>Home</h3>
+					<ul>
+						<li><a href="#">Pampers Diapers</a></li>
+						<li><a href="#">Huggies Diapers</a></li>
+						<li><a href="#">Seventh Generation</a></li>
+						<li><a href="#">Diapers</a></li>
+						<li><a href="#">Derbies</a></li>
+						<li><a href="#">Driving shoes</a></li>
+						<li><a href="#">Espadrilles</a></li>
+						<li><a href="#">Loafers</a></li>
+					</ul>
+				</div>
+
+				<div class="nav-column">
+					<h3>Home</h3>
+					<ul>
+						<li><a href="#">Driving shoes</a></li>
+						<li><a href="#">Espadrilles</a></li>
+						<li><a href="#">Loafers</a></li>
+					</ul>
+
+					<h3>Home</h3>
+					<ul>
+						<li><a href="#">Driving shoes</a></li>
+						<li><a href="#">Espadrilles</a></li>
+						<li><a href="#">Loafers</a></li>
+					</ul>
+				</div>
+
+				<div class="nav-column">
+					<h3>Home</h3>
+					<ul>
+						<li><a href="#">Pampers Diapers</a></li>
+						<li><a href="#">Huggies Diapers</a></li>
+						<li><a href="#">Seventh Generation</a></li>
+						<li><a href="#">Diapers</a></li>
+						<li><a href="#">Derbies</a></li>
+						<li><a href="#">Driving shoes</a></li>
+						<li><a href="#">Espadrilles</a></li>
+						<li><a href="#">Loafers</a></li>
+					</ul>
+				</div>
+
+
+			</div>
+        </li>
+        
+		<li>
+			<a href="#">Kurser</a>
+			<div>
+				<div class="nav-column">
+					<h3 class="orange">Valpar</h3>
+					<ul>
+						<li><a href="#">Kurslitratur</a></li>
+						<li><a href="#">Forum</a></li>
+						<li><a href="#">FAQ</a></li>
+					</ul>
+				</div>
+                <div class="nav-column">
+					<h3 class="orange">Vardagslydnad</h3>
+					<ul>
+						<li><a href="#">Kurslitratur</a></li>
+						<li><a href="#">Forum</a></li>
+						<li><a href="#">FAQ</a></li>
+					</ul>
+				</div>
+
+				<div class="nav-column">
+					<h3 class="orange">Seniorer</h3>
+					<ul>
+						<li><a href="#">Kurslitratur</a></li>
+						<li><a href="#">Forum</a></li>
+						<li><a href="#">FAQ</a></li>
+					</ul>
+				</div>
+
+		</div>	
+		</li>
+		<li><a href="#">Privatträning</a></li>
+		<li><a href="#">Lästips</a></li>
+		<li>
+        <a href="#">Kontakt</a>
+        <div>
+<div class="nav-column">
+					<h3 class="orange">Kontakta oss</h3>
+					
+<section id="container">
+		<span class="chyron"><em></em></span>
+	  <!--<h2>Hongkiat Stylish Form Elements</h2>-->
+		<form name="hongkiat" id="hongkiat-form" method="post" action="#">
+		<div id="wrapping" class="clearfix">
+			<section id="aligned">
+			<input type="text" name="name" id="name" placeholder="Your name" autocomplete="off" tabindex="1" class="txtinput">
+		
+			<input type="email" name="email" id="email" placeholder="Your e-mail address" autocomplete="off" tabindex="2" class="txtinput">
+		
+			<input type="url" name="website" id="website" placeholder="Website URL" autocomplete="off" tabindex="3" class="txtinput">
+		
+			<input type="tel" name="telephone" id="telephone" placeholder="Phone number?(optional)" tabindex="4" class="txtinput">
+		
+			<textarea name="message" id="message" placeholder="Enter a cool message..." tabindex="5" class="txtblock"></textarea>
+			</section>
+			
+			<section id="aside" class="clearfix">
+				<section id="recipientcase">
+				<h3>Recipient:</h3>
+					<select id="recipient" name="recipient" tabindex="6" class="selmenu">
+  						<option value="staff">Site Staff</option>
+  						<option value="editor">Editor-in-Chief</option>
+  						<option value="technical">Tech Department</option>
+  						<option value="pr">Public Relations</option>
+  						<option value="support">General Support</option>
+					</select>
+				</section>
+				
+				<section id="prioritycase">
+					<h3>Priority:</h3>
+					<span class="radiobadge">
+						<input type="radio" id="low" name="priority" value="low">
+						<label for="low">Low</label>
+					</span>
+				
+					<span class="radiobadge">
+						<input type="radio" id="med" name="priority" value="med" checked="checked">
+						<label for="med">Medium</label>
+					</span>
+				
+					<span class="radiobadge">
+						<input type="radio" id="high" name="priority" value="high">
+						<label for="high">High</label>
+					</span>
+				</section>
+			</section>
+		</div>
+
+
+		<section id="buttons">
+			<input type="reset" name="reset" id="resetbtn" class="resetbtn" value="Reset">
+			<input type="submit" name="submit" id="submitbtn" class="submitbtn" tabindex="7" value="Submit this!">
+			<br style="clear:both;">
+		</section>
+		</form>
+	</section>
+					
+				</div>
+			</div>
+        </li>
+        <li><a href="#">FAQ</a></li>
+		<li class="nav-search">
+			<form action="#">
+				<input type="text" placeholder="Search...">
+				<input type="submit" value="">
+			</form>
+		</li>
+	</ul>
+    
+<hgroup><h1>Glada Hundar</h1>
+  <h2>För en roligare träning!</h2>
+  </hgroup>     
 </header>
 <div id="content">
 <main>
-  <section><h2>Demonstrating EM and STRONG</h2>
+  <section>
+ <!-- <h2>Demonstrating EM and STRONG</h2>-->
 			
 			<!-- "strong" is used for SEO and contextual hierarchy -->
 	<p><strong>This text will have more importance (SEO-wise and contextually)</strong></p>
