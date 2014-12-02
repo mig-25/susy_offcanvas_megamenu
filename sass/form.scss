@@ -14,7 +14,7 @@ $all_devices:max-width 800px;
 $desktop:max-width 1200px;
 
 body{
-	overflow: hidden;
+	/*overflow: hidden;*/
 /** all devices and responsive browser windows **/
 	@include susy-breakpoint($all_devices, 12){
 		padding: 10px 15px;
