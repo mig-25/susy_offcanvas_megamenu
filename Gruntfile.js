@@ -37,10 +37,10 @@ module.exports = function (grunt) {
       server: {
        options: {
         livereload: 1337,
-        port: 4000,
+        port: 9001,
         base: 'build/',
         open: {
-          target: 'http://localhost:9001/',
+          target: 'http://localhost:9001/off_canvas.html',
         }
        }
      }

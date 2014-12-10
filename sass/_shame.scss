@@ -1,0 +1,123 @@
+// ==========
+// Create Susy Global Settings
+// ==========
+
+$susy: (columns: 12, global-box-sizing: border-box, debug: (image: show-columns, output: overlay, toggle: bottom left));
+
+@include border-box-sizing;
+
+// ==========
+// EXAMPLE THREE
+// ==========
+
+$off-canvas-width-3: 50%;
+
+.transformer {
+  @include trans-prep;
+  transition: transform 0.3s ease;
+  &.is-open {
+    transform: translate3d($off-canvas-width-3, 0, 0);
+  }
+}
+
+.off-canvas {
+  position: absolute;
+  width: $off-canvas-width-3;
+  left: -$off-canvas-width-3;
+  top: 0;
+  bottom: 0;
+  padding: 0 gutter();
+  @include container;
+  li {
+    @include gallery(6);
+    margin-top: gutter();
+  }
+  a {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    height: 4em;
+    &:hover,
+    &:active,
+    &:focus {
+      border-color: orange;
+    }
+  }
+  .close {
+    padding-left: 0;
+    float: right;
+  }
+}
+
+// Your Off Canvas item
+.nav {
+  position: fixed;
+  width: $off-canvas-width-3;
+  left: -$off-canvas-width-3;
+  top: 0;
+  bottom: 0;
+  @include cf;
+  @include container;
+  @include breakpoint(768px) {
+    position: static;
+    width: 100%;
+  }
+}
+
+.nav li {
+  display: block;
+  @include breakpoint(768px) {
+    float: left;
+  }
+}
+
+.show-menu {
+  display: block;
+  cursor: pointer;
+  @include breakpoint(760px) {
+    display: none;
+  }
+}
+
+// Off canvas nav demo styles
+.off-canvas {
+  background: #333;
+  font-size: 16px;
+  li {
+    list-style: none;
+  }
+  a {
+    display: block;
+    padding: 1em 1.5em;
+    border-bottom: 1px solid #ddd;
+    color: white;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    &:hover,
+    &:active,
+    &:focus {
+      background: orange;
+      border-color: orange;
+      opacity: 1;
+    }
+  }
+  // close btn
+  .close {
+    padding-left: 1.5em;
+    border-bottom: 1px solid #ddd;
+  }
+  .close-btn {
+    display: block;
+    margin-top: 1.75em;
+    height: 1.5em;
+    margin-bottom: 1.75em;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.2s ease;
+    &:hover,
+    &:active,
+    &:focus {
+      opacity: 1;
+    }
+  }
+}
