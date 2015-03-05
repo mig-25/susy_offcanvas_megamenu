@@ -200,8 +200,8 @@ ul li, li a {
     transition: all .3s ease .15s;
 	
 	/*border: 2px solid;
-	border-radius: 10px;*/
-	margin-top: 10px;
+	border-radius: 10px;
+	margin-top: 10px;*/
 }
 
 .nav > li:hover > div {
@@ -216,7 +216,6 @@ border-bottom-right-radius: 25px;
 .nav .nav-column {
     float: left;
     width: 15%;
-    padding: 2.5%;
 	margin: 2%;
 	
 	@include susy-breakpoint($tablet, 12){
