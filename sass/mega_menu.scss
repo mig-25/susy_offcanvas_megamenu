@@ -10,21 +10,7 @@ $mobile:max-width 320px;
 $tablet:max-width 760px;
 $desktop:max-width 1200px;
 
-body{
-	/*overflow: hidden;*/
-	/*@include container(80%);*/
-	}
-	
-.page{
-	@include container(80%);
-	/*breakpoint for tablet*/
-	@include susy-breakpoint($tablet, 12){
-		@include show-grid(12);
-		}
-		/*breakpoint for desktop*/
-		@include susy-breakpoint($desktop, 24){
-			@include show-grid(24);}
-		}	
+
 
 .nav,
 .nav a,
@@ -94,7 +80,7 @@ ul li, li a {
     color: #fcfcfc;
     text-shadow: 0 0 1px rgba(0,0,0,.35);
  
-    background: #372f2b;
+    background: #FF8400;
     border-left: 1px solid #4b4441;
     border-right: 1px solid #312a27;
  
