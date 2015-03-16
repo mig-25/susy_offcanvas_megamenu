@@ -26,8 +26,9 @@ $desktop:max-width 1200px;
 }
  
 .nav-container{
-	width:100;
-	padding: 0px 2px 0px 2px;}
+	width:100%;
+	padding: 0px 2px 0px 2px;
+	margin: 0 auto;}
  
 .nav a { text-decoration: none; }
  
@@ -110,7 +111,7 @@ ul li, li a {
     display: block;
     float: left;
     width: 1px;
-    height: 24px;
+    height: 100%;
     padding: 15px 0;
     line-height: 24px;
  
